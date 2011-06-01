@@ -198,7 +198,7 @@ var assetLoaders = {
       e.loop = data.loop;
     
     var state = { 
-      loaded: false,
+      loaded: false
     };
     
     var loadingCallback = function (evt) {
@@ -350,7 +350,7 @@ var assetLoaders = {
     // In practice, the size shouldn't change until the font has loaded.
     var pointSize = (data || 12) + "pt";
     e.setAttribute("style", 'font: ' + pointSize + ' "' + fontId + '"');
-  },
+  }
 };
 
 function loadNextAsset (assets, i, onDoneLoading, loadDelay) {      
